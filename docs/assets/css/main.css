@@ -2317,6 +2317,12 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.image-edit{
+			object-fit:none;
+			width:200px;
+			height:20px;
+		}
+
 		.image img {
 			border-radius: 4px;
 			display: block;
@@ -2707,6 +2713,7 @@ input, select, textarea {
 
 			.tiles article.style1 > .image:before {
 				background-color: #f2849e;
+				opacity:0.3;
 			}
 
 			.tiles article.style2 > .image:before {
