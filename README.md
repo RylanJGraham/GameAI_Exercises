@@ -9,7 +9,7 @@ For ease of access if you would like to check out our most recent projects, and 
 Click [here](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with AI pathfinding to designated waypoints in the scene, as well as random AI object movement in timing, direction, and distance.  
 
 ## Flocking & Leader
-Click [here]([https://github.com/RylanJGraham/GameAI_Exercise02_Flocking]) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with AI flocking, allowing AI elements to group and follow a designated leader. Also featured is other flocking showcases around designated flock points in the scene!
+Click [here](https://github.com/RylanJGraham/GameAI_Exercise02_Flocking) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with AI flocking, allowing AI elements to group and follow a designated leader. Also featured is other flocking showcases around designated flock points in the scene!
 
 ## Developers
 ![](https://raw.githubusercontent.com/Historn/PinBall_Game/master/TeamPhotos/rylangraham.jpg)
