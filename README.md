@@ -11,6 +11,9 @@ Click [here](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) to che
 ## Flocking & Leader
 Click [here](https://github.com/RylanJGraham/GameAI_Exercise02_Flocking) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with AI flocking, allowing AI elements to group and follow a designated leader. Also featured is other flocking showcases around designated flock points in the scene!
 
+## Perception Detection
+Click [here](https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with Camera Frustrum Detection, allowing for AI agents in the scene to detect player based on camera perception. Scene is decorated in an apocalyptic style, featuring a run down city square, lit with fire, smoke, and fog lighting. Watch as the lone soldier avoids zombie detection!
+
 ## Developers
 ![](https://raw.githubusercontent.com/Historn/PinBall_Game/master/TeamPhotos/rylangraham.jpg)
  - [Rylan Graham](https://github.com/RylanJGraham)
