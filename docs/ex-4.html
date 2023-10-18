@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Game AI - Finite State Machines</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/robot.png" alt="" /></span><span class="title">Game AI - Rylan Graham & Adria Pons</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="ex-1.html">Patrolling & Wandering</a></li>
+							<li><a href="ex-2.html">Flocking & Leader</a></li>
+							<li><a href="ex-3.html">Perception</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Game AI - Finite State Machine</h1>
+							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px;" src="images/EX3/Coverex3.png" alt="" /></span>
+							<div>
+								<h3>Project Info</h3>
+											<ul class="alt">
+												<li>Project Work Time: <span style="color:black; font-weight: bold;">10 hours</span> </li>
+												<li>Tech Stack: <span style="color:black; font-weight: bold;">Unity Engine, VS Code, Unity Assets</span></li>
+												<li>Contributors: <a href="https://github.com/RylanJGraham" style="color:black; font-weight: bold;">Rylan Graham</a> &  <a href="https://github.com/AdriaPm" style="color:black; font-weight: bold;">Adria Pons</a></li>
+											</ul>
+							</div>
+							<div style="margin-bottom:60px; margin-top:-20px;">
+								<h3>Check Out the Project!</h3>
+								<a target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines" class="icon brands style2 fa-github" style="width:300px; border-radius:20px; margin-top:-10px; border-width: 2px; background-color:black; color:rgb(107, 14, 230); border-color:rgb(107, 14, 230)"><span class="label">GitHub</span></a>
+							</div>
+							<h3>Download Release!</h3>
+							<a href="zips/GameAI_Pathfinding&Wander_Build.zip" download="GameAI-Pathfinding&Wander-Release" class="button primary icon solid fa-download" style="margin-top:-20px; margin-bottom: 40px;">Release</a>
+							<section>
+								<h2 style="font-weight:700">Features</h2>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Feature</th>
+												<th>Description</th>
+												<th>View</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td style="font-weight:700; width:200px;">Player Wander</td>
+												<td style="width:300px;">Player wanders scene randomly, player direction, distance, and timing are random.</td>
+												<td>AI Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception/blob/main/GameAI_Ex3_Perception/Assets/PlayerWander.cs">Player Wander</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Zombie Script</td>
+												<td style="width:300px;">Zombies have camera frustrum attached to model, the length of scope has been modified. Zombies wander scene by default, however upon player detected in camera frame, global message is sent to all zombies via "Zombie Manager" and they begin to flock, changing behavior.</td>
+												<td>AI Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception/blob/main/GameAI_Ex3_Perception/Assets/ZombieController.cs">Zombie Behavior</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Zombie Manager</td>
+												<td style="width:300px;">Upon zombie in scene percieving player, all zombies within manager group have bool of wander-flock flipped and begin to flock based on player coordinates. Script acts as a switch that flips all zombie behavior upon one detection.</td>
+												<td>AI Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception/blob/main/GameAI_Ex3_Perception/Assets/ZombieManager.cs">Zombie Manager</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Menu System</td>
+												<td style="vertical-align:top; width:300px;">Game has a toggleable menu which can be accessed via the esc key. In the menu the user is shown camera selections, and a scene overview</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/MenuGif.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Top Down Camera</td>
+												<td style="vertical-align:top; width:300px;">Navigation camera that allows user to ascend, descend, and move around scene.</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/TopDownCam.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Zombie Detection Cam</td>
+												<td style="vertical-align:top; width:300px;">Viewable camera with zombie detection, allows user to see zombie detection range.</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/ZombiePOV.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Zombie Flocking</td>
+												<td style="vertical-align:top; width:300px;">Zombie flocking to global player location on bool switched via 1 zombies detection. They all begin to flock to player.</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/Flocking-Zombie.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Scene Decoration</td>
+												<td style="vertical-align:top; width:300px;">Scene is decorated with VFX elements, including smoke, fire, fog, and lighting. Prefab assets of street elements, buildings, and highways also included.</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/Decoration.gif" alt="" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h2 style="font-weight:700">Features Video</h2>
+						</div>
+						<div style="display:flex; justify-content:center">
+							<iframe width="1080" height="720" src="" allowfullscreen></iframe>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
