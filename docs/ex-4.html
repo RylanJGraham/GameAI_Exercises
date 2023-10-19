@@ -51,11 +51,11 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Game AI - Finite State Machine</h1>
-							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px;" src="images/EX3/Coverex3.png" alt="" /></span>
+							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px;" src="images/EX4/topcover.png" alt="" /></span>
 							<div>
 								<h3>Project Info</h3>
 											<ul class="alt">
-												<li>Project Work Time: <span style="color:black; font-weight: bold;">10 hours</span> </li>
+												<li>Project Work Time: <span style="color:black; font-weight: bold;">3 hours</span> </li>
 												<li>Tech Stack: <span style="color:black; font-weight: bold;">Unity Engine, VS Code, Unity Assets</span></li>
 												<li>Contributors: <a href="https://github.com/RylanJGraham" style="color:black; font-weight: bold;">Rylan Graham</a> &  <a href="https://github.com/AdriaPm" style="color:black; font-weight: bold;">Adria Pons</a></li>
 											</ul>
@@ -79,44 +79,54 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td style="font-weight:700; width:200px;">Player Wander</td>
-												<td style="width:300px;">Player wanders scene randomly, player direction, distance, and timing are random.</td>
-												<td>AI Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception/blob/main/GameAI_Ex3_Perception/Assets/PlayerWander.cs">Player Wander</a></td>
+												<td style="font-weight:700; width:200px;">Robber Approaching Key</td>
+												<td style="width:300px;">Script that determines when robber can enter the approach key behavior, based on proximity to cop</td>
+												<td>AI Approach Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/Approaching.cs">Robber Approach</a></td>
 											</tr>
 											<tr>
-												<td style="font-weight:700; width:200px;">Zombie Script</td>
-												<td style="width:300px;">Zombies have camera frustrum attached to model, the length of scope has been modified. Zombies wander scene by default, however upon player detected in camera frame, global message is sent to all zombies via "Zombie Manager" and they begin to flock, changing behavior.</td>
-												<td>AI Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception/blob/main/GameAI_Ex3_Perception/Assets/ZombieController.cs">Zombie Behavior</a></td>
+												<td style="font-weight:700; width:200px;">Robber Hiding</td>
+												<td style="width:300px;">Script determines Robber hide location. Once key stolen robber chooses assigned "hide" spot. Will run from cop around spot</td>
+												<td>AI Hide Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/Hiding.cs">Robber Hiding</a></td>
 											</tr>
 											<tr>
-												<td style="font-weight:700; width:200px;">Zombie Manager</td>
-												<td style="width:300px;">Upon zombie in scene percieving player, all zombies within manager group have bool of wander-flock flipped and begin to flock based on player coordinates. Script acts as a switch that flips all zombie behavior upon one detection.</td>
-												<td>AI Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception/blob/main/GameAI_Ex3_Perception/Assets/ZombieManager.cs">Zombie Manager</a></td>
+												<td style="font-weight:700; width:200px;">Robber Moves</td>
+												<td style="width:300px;">Script that calls all Robber possible moves during scene. Used by animator to determine Robber states</td>
+												<td>AI Moves Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/Moves.cs">Robber Moves</a></td>
 											</tr>
 											<tr>
-												<td style="font-weight:700; vertical-align:top; width:200px;">Menu System</td>
-												<td style="vertical-align:top; width:300px;">Game has a toggleable menu which can be accessed via the esc key. In the menu the user is shown camera selections, and a scene overview</td>
-												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/MenuGif.gif" alt="" /></td>
+												<td style="font-weight:700; width:200px;">Robber Wander</td>
+												<td style="width:300px;">Robber wander script, allows robber to wander scene when cop is too close</td>
+												<td>AI Wander Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/Wandering.cs">Robber Wander</a></td>
 											</tr>
 											<tr>
-												<td style="font-weight:700; vertical-align:top; width:200px;">Top Down Camera</td>
-												<td style="vertical-align:top; width:300px;">Navigation camera that allows user to ascend, descend, and move around scene.</td>
+												<td style="font-weight:700; width:200px;">Cop Movement</td>
+												<td style="width:300px;">Cop moves via user press input on scene. Cop moves to cursor location on click</td>
+												<td>Cop Move Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/MouseMove.cs">Cop Move</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">State Machine - Animator</td>
+												<td style="vertical-align:top; width:300px;">Robber moves are determined by Finite State Machine in Animator, allows for assignment of robber behaviors to simple nodes</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/fsm.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Cop Navigation</td>
+												<td style="vertical-align:top; width:300px;">Able to move cop around scene via pressing on location, cop will move to location</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/CopMove.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Robber Stealing</td>
+												<td style="vertical-align:top; width:300px;">Robbers can be seen visibly grabbing key, model dissapears when stolen</td>
 												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/TopDownCam.gif" alt="" /></td>
 											</tr>
 											<tr>
-												<td style="font-weight:700; vertical-align:top; width:200px;">Zombie Detection Cam</td>
-												<td style="vertical-align:top; width:300px;">Viewable camera with zombie detection, allows user to see zombie detection range.</td>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Robber Hiding</td>
+												<td style="vertical-align:top; width:300px;">Robbers move to chosen hide location, and evade cop</td>
 												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/ZombiePOV.gif" alt="" /></td>
 											</tr>
 											<tr>
-												<td style="font-weight:700; vertical-align:top; width:200px;">Zombie Flocking</td>
-												<td style="vertical-align:top; width:300px;">Zombie flocking to global player location on bool switched via 1 zombies detection. They all begin to flock to player.</td>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Menu System</td>
+												<td style="vertical-align:top; width:300px;">Functional menu system opened via esc key press, provides user with guide</td>
 												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/Flocking-Zombie.gif" alt="" /></td>
-											</tr>
-											<tr>
-												<td style="font-weight:700; vertical-align:top; width:200px;">Scene Decoration</td>
-												<td style="vertical-align:top; width:300px;">Scene is decorated with VFX elements, including smoke, fire, fog, and lighting. Prefab assets of street elements, buildings, and highways also included.</td>
-												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX3/Decoration.gif" alt="" /></td>
 											</tr>
 										</tbody>
 									</table>
