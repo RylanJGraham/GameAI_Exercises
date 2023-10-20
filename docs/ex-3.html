@@ -43,6 +43,7 @@
 							<li><a href="ex-1.html">Patrolling & Wandering</a></li>
 							<li><a href="ex-2.html">Flocking & Leader</a></li>
 							<li><a href="ex-3.html">Perception</a></li>
+							<li><a href="ex-4.html">Finite State Machines</a></li>
 							<!--<li><a href="elements.html">Elements</a></li>-->
 						</ul>
 					</nav>
@@ -52,8 +53,16 @@
 						<div class="inner">
 							<h1>Game AI - Perception</h1>
 							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px;" src="images/EX3/Coverex3.png" alt="" /></span>
+							<div style="display:flex; justify-content: space-evenly; margin-top: -60px; margin-bottom:60px;">
+								<button style="border-radius: 100px;"><a href="#ProjInfo">Project Info</a></button>
+								<button style="border-radius: 100px;"><a href="#Github">Github</a></button>
+								<button style="border-radius: 100px;"><a href="#Release">Release</a></button>
+								<button style="border-radius: 100px;"><a href="#Features">Features</a></button>
+								<button style="border-radius: 100px;"><a href="#Video">Video</a></button>
+								<button style="border-radius: 100px;"><a href="#Play_EX3">Play</a></button>
+							</div>
 							<div>
-								<h3>Project Info</h3>
+								<h3 id="ProjInfo">Project Info</h3>
 											<ul class="alt">
 												<li>Project Work Time: <span style="color:black; font-weight: bold;">10 hours</span> </li>
 												<li>Tech Stack: <span style="color:black; font-weight: bold;">Unity Engine, VS Code, Unity Assets</span></li>
@@ -61,13 +70,13 @@
 											</ul>
 							</div>
 							<div style="margin-bottom:60px; margin-top:-20px;">
-								<h3>Check Out the Project!</h3>
+								<h3 id="Github">Check Out the Project!</h3>
 								<a target="_blank" href="https://github.com/RylanJGraham/Game-AI-Exercise_3-Perception" class="icon brands style2 fa-github" style="width:300px; border-radius:20px; margin-top:-10px; border-width: 2px; background-color:black; color:rgb(107, 14, 230); border-color:rgb(107, 14, 230)"><span class="label">GitHub</span></a>
 							</div>
-							<h3>Download Release!</h3>
+							<h3 id="Release">Download Release!</h3>
 							<a href="zips/Exercise4-GameAI.zip" download="GameAI-Perception-Release" class="button primary icon solid fa-download" style="margin-top:-20px; margin-bottom: 40px;">Release</a>
 							<section>
-								<h2 style="font-weight:700">Features</h2>
+								<h2 id="Features" style="font-weight:700">Features</h2>
 								<div class="table-wrapper">
 									<table>
 										<thead>
@@ -121,11 +130,18 @@
 										</tbody>
 									</table>
 								</div>
-								<h2 style="font-weight:700">Features Video</h2>
-						</div>
+								<h2 id="Video" style="font-weight:700">Features Video</h2>
+								<div style="display:flex; justify-content:center">
+									<iframe width="1080" height="720" src="https://www.youtube.com/embed/rCv_20A-1ms?si=iE517vE4-KI_1-u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<h2 id="Play_EX3" style="font-weight:700; margin-top: 60px;">Play Now!</h2>
 						<div style="display:flex; justify-content:center">
-							<iframe width="1080" height="720" src="https://www.youtube.com/embed/rCv_20A-1ms?si=iE517vE4-KI_1-u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
+    							mozallowfullscreen="true" src="https://play.unity.com/webgl/1b721355-381e-4d17-88ab-47219045f8e6?screenshot=false&embedType=embed"  width="1280"
+    							height="720" onmousewheel="" webkitallowfullscreen="true"></iframe>
 						</div>
+						</div>
+						
 					</div>
 
 				<!-- Footer -->
