@@ -1,13 +1,14 @@
 # GameAI_Exercises
-Game AI Exercises completed for Bachelors in Video Game Design &amp; Development at CITM-UPC. Ran in Unity Engine, with C# scripts with AI logic elements. 
+Info: Game AI Exercises completed for Bachelors in Video Game Design &amp; Development at CITM-UPC. Ran in Unity Engine, with C# scripts with AI logic elements. 
 
 ### Website: [GameAI_Exercises](https://rylanjgraham.github.io/GameAI_Exercises/)
-View all projects completed on our live website that updates with each project completed here! For ease of access if you would like to check out our most recent projects, and their releases here they are!
+*View all projects completed on our live website that updates with each project completed here! For ease of access if you would like to check out our most recent projects, and their releases here they are!*
 
 ## Patrolling & Wandering
 <img src="docs/images/spotlight-flicker.gif" width="800" height="400">
 
-Click [here](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with AI pathfinding to designated waypoints in the scene, as well as random AI object movement in timing, direction, and distance.  
+Click [here](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) to check out our Github repository. 
+*You can find the Unity project folder and a small showcase video inside of it. The project features work with AI pathfinding to designated waypoints in the scene, as well as random AI object movement in timing, direction, and distance.*  
 
 ## Flocking & Leader
 <img src="docs/images/flocking.gif" width="800" height="400">
