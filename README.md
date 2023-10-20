@@ -7,7 +7,7 @@ Info: Game AI Exercises completed for Bachelors in Video Game Design &amp; Devel
 ## Patrolling & Wandering
 <img src="docs/images/spotlight-flicker.gif" width="800" height="400">
 
-Click [here](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) to check out our Github repository. 
+### [Github Repo](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) 
 *You can find the Unity project folder and a small showcase video inside of it. The project features work with AI pathfinding to designated waypoints in the scene, as well as random AI object movement in timing, direction, and distance.*  
 
 ## Flocking & Leader
