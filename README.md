@@ -6,7 +6,7 @@ View all projects completed on our live website that updates with each project c
 For ease of access if you would like to check out our most recent projects, and their releases here they are!
 
 ## Patrolling & Wandering
-![Patrolling&Wandering](docs/images/spotlight-flicker.gif)
+![Patrolling&Wandering](docs/images/spotlight-flicker.gif| width=100)
 
 Click [here](https://github.com/AdriaPm/GameAI_Excercise01_Patrol-Wander) to check out our Github repository. You can find the Unity project folder and a small showcase video inside of it. The project features work with AI pathfinding to designated waypoints in the scene, as well as random AI object movement in timing, direction, and distance.  
 
