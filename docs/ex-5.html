@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<style>
+			.index{
+				font-size:32;
+				color:black;
+				padding-left: 40px;
+				padding-right:40px;
+				background-color: aliceblue;
+				border-radius: 100px;
+				border-width: 10px;
+			}
+
+		</style>
+		<title>Game AI - Behavior Bricks</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/robot.png" alt="" /></span><span class="title">Game AI - Rylan Graham & Adria Pons</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="ex-1.html">Patrolling & Wandering</a></li>
+							<li><a href="ex-2.html">Flocking & Leader</a></li>
+							<li><a href="ex-3.html">Perception</a></li>
+							<li><a href="ex-4.html">Finite State Machines</a></li>
+							<li><a href="ex-5.html">Behavior Bricks</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Game AI - Behavior Bricks</h1>
+							<h3>Playable WebGL Release available at the end of the page!</h3>
+							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px; margin:none" src="images/EX4/topcover.png" alt="" /></span>
+								<div style="display:flex; justify-content: space-evenly; margin-top: -60px; margin-bottom:60px;">
+									<button style="border-radius: 100px;"><a href="#ProjInfo">Project Info</a></button>
+									<button style="border-radius: 100px;"><a href="#Github">Github</a></button>
+									<button style="border-radius: 100px;"><a href="#Release">Release</a></button>
+									<button style="border-radius: 100px;"><a href="#Features">Features</a></button>
+									<button style="border-radius: 100px;"><a href="#Video">Video</a></button>
+									<button style="border-radius: 100px;"><a href="#Play_EX4">Play</a></button>
+								</div>
+							<div>
+								<div>
+									<h3 id="ProjInfo">Project Info</h3>
+											<ul class="alt">
+												<li>Project Work Time: <span style="color:black; font-weight: bold;">2 hours</span> </li>
+												<li>Tech Stack: <span style="color:black; font-weight: bold;">Unity Engine, VS Code, Unity Assets</span></li>
+												<li>Contributors: <a href="https://github.com/RylanJGraham" style="color:black; font-weight: bold;">Rylan Graham</a> &  <a href="https://github.com/AdriaPm" style="color:black; font-weight: bold;">Adria Pons</a></li>
+											</ul>
+								</div>
+							</div>
+							
+							<div style="margin-bottom:60px; margin-top:-20px;">
+								<h3  id="Github">Check Out the Project!</h3>
+								<a target="_blank" href="https://github.com/RylanJGraham/GameAI_BehaviorBricks" class="icon brands style2 fa-github" style="width:300px; border-radius:20px; margin-top:-10px; border-width: 2px; background-color:black; color:rgb(107, 14, 230); border-color:rgb(107, 14, 230)"><span class="label">GitHub</span></a>
+							</div>
+							<h3  id="Release">Download Release!</h3>
+							<a href="zips/FiniteStateMachine-Build.zip" download="GameAI-FSM-Release" class="button primary icon solid fa-download" style="margin-top:-20px; margin-bottom: 40px;">Release</a>
+							<section>
+								<h2  id="Features" style="font-weight:700">Features</h2>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Feature</th>
+												<th>Description</th>
+												<th>View</th>
+											</tr>
+										</thead>
+										<tbody style="align-content: start;">
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">ToSteal Behavior</td>
+												<td style="vertical-align:top; width:300px;">Behavior Tree that determines Robber movement and stealing actions on Cop distance</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX5/RobberBehavior.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Robber Behavior Tree</td>
+												<td style="vertical-align:top; width:300px;">Behavior Tree that determines scene robber movement and actions. Robber steals when cop is far away via triggers to game objects</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX5/ToSteal.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Robber Moves</td>
+												<td style="width:300px;">Script that calls all Robber possible moves during scene. Used by animator to determine Robber states</td>
+												<td>AI Moves Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/Moves.cs">Robber Moves</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Robber Wander</td>
+												<td style="width:300px;">Robber wander script, allows robber to wander scene when cop is too close</td>
+												<td>AI Wander Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/Wandering.cs">Robber Wander</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Cop Movement</td>
+												<td style="width:300px;">Cop moves via user press input on scene. Cop moves to cursor location on click</td>
+												<td>Cop Move Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_Exercise04_FiniteStateMachines/blob/main/GameAI_Exercise04_FiniteStateMachines/Assets/Scripts/MouseMove.cs">Cop Move</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">State Machine - Animator</td>
+												<td style="vertical-align:top; width:300px;">Robber moves are determined by Finite State Machine in Animator, allows for assignment of robber behaviors to simple nodes</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/fsm.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Cop Navigation</td>
+												<td style="vertical-align:top; width:300px;">Able to move cop around scene via pressing on location, cop will move to location</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/CopMove.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Robber Stealing</td>
+												<td style="vertical-align:top; width:300px;">Robbers can be seen visibly grabbing key, model dissapears when stolen</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/CopSteal.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Robber Hiding</td>
+												<td style="vertical-align:top; width:300px;">Robbers move to chosen hide location, and evade cop</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/RobberHide.gif" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Menu System</td>
+												<td style="vertical-align:top; width:300px;">Functional menu system opened via esc key press, provides user with guide</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX4/Menu.PNG" alt="" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h2  id="Video" style="font-weight:700">Features Video</h2>
+								<div style="display:flex; justify-content:center">
+									<iframe width="1080" height="720" src="" allowfullscreen></iframe>
+								</div>
+								<h2 id="Play_EX4" style="font-weight:700">Play Now!</h2>
+						<div style="display:flex; justify-content:center">
+							<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
+    							mozallowfullscreen="true" src="https://play.unity.com/webgl/6fddb539-562f-4d35-a4ff-8ed71942842c?screenshot=false&embedType=embed"  width="1280"
+    							height="720" onmousewheel="" webkitallowfullscreen="true"></iframe>
+						</div>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
