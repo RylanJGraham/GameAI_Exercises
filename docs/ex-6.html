@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<style>
+			.index{
+				font-size:32;
+				color:black;
+				padding-left: 40px;
+				padding-right:40px;
+				background-color: aliceblue;
+				border-radius: 100px;
+				border-width: 10px;
+			}
+
+		</style>
+		<title>Game AI - Formation Motion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/robot.png" alt="" /></span><span class="title">Game AI - Rylan Graham & Adria Pons</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="ex-1.html">Patrolling & Wandering</a></li>
+							<li><a href="ex-2.html">Flocking & Leader</a></li>
+							<li><a href="ex-3.html">Perception</a></li>
+							<li><a href="ex-4.html">Finite State Machines</a></li>
+							<li><a href="ex-5.html">Behavior Bricks</a></li>
+							<li><a href="ex-6.html">Formation Motion</a></li>
+							<li><a href="ex-7.html">Final Project</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Game AI - Formation Motion</h1>
+							<h3>Discover Formation Motion Behavior!</h3>
+							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px; margin:none" src="images/EX6/FormationMotion.png" alt="" /></span>
+								<div style="display:flex; justify-content: space-evenly; margin-top: -60px; margin-bottom:60px;">
+									<button style="border-radius: 100px;"><a href="#ProjInfo">Project Info</a></button>
+									<button style="border-radius: 100px;"><a href="#Github">Github</a></button>
+									<button style="border-radius: 100px;"><a href="#Features">Features</a></button>
+									<button style="border-radius: 100px;"><a href="#Video">Video</a></button>
+								</div>
+							<div>
+								<div>
+									<h3 id="ProjInfo">Project Info</h3>
+											<ul class="alt">
+												<li>Project Work Time: <span style="color:black; font-weight: bold;">1 hour</span> </li>
+												<li>Tech Stack: <span style="color:black; font-weight: bold;">Unity Engine, VS Code, Unity Assets</span></li>
+												<li>Contributors: <a href="https://github.com/RylanJGraham" style="color:black; font-weight: bold;">Rylan Graham</a> &  <a href="https://github.com/AdriaPm" style="color:black; font-weight: bold;">Adria Pons</a></li>
+											</ul>
+								</div>
+							</div>
+							
+							<div style="margin-bottom:60px; margin-top:-20px;">
+								<h3  id="Github">Check Out the Project!</h3>
+								<a target="_blank" href="https://github.com/AdriaPm/GameAI_FormationMotion" class="icon brands style2 fa-github" style="width:300px; border-radius:20px; margin-top:-10px; border-width: 2px; background-color:black; color:rgb(107, 14, 230); border-color:rgb(107, 14, 230)"><span class="label">GitHub</span></a>
+							</div>
+							<section>
+								<h2  id="Features" style="font-weight:700">Features</h2>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Feature</th>
+												<th>Description</th>
+												<th>View</th>
+											</tr>
+										</thead>
+										<tbody style="align-content: start;">
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Following</td>
+												<td style="vertical-align:top; width:300px;">People follow the leader, maintaining the same speed and offsets to movement.</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX6/FormationMotion.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Spacing</td>
+												<td style="vertical-align:top; width:300px;">Followers maintain spacing from one another, being sure to stick in formation.</td>
+												<td><img style="object-fit:cover; height:300px; width:600px; border-radius:10px; vertical-align:middle" src="images/EX6/FormationMotion.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Mouse Moving</td>
+												<td style="width:300px;">Script makes the leader move to the mouse location, bringing all followers with him.</td>
+												<td>AI Moves Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_FormationMotion/blob/main/GameAI_Formation-Motion/Assets/Scripts/MouseMove.cs">Mouse Movement</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px;">Formation</td>
+												<td style="width:300px;">Script maintains formation and following behavior of all followers.</td>
+												<td>AI Wander Script: <a style="color:blue" target="_blank" href="https://github.com/AdriaPm/GameAI_FormationMotion/blob/main/GameAI_Formation-Motion/Assets/Scripts/Formation.cs">Formation</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h2  id="Video" style="font-weight:700">Features Video</h2>
+								<div style="display:flex; justify-content:center">
+									<iframe width="1080" height="720" src="https://www.youtube.com/embed/rk3wufE2tpw?si=EusEM9H9g_MR0LR4" allowfullscreen></iframe>
+								</div>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

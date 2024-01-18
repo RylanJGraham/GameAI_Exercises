@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<style>
+			.index{
+				font-size:32;
+				color:black;
+				padding-left: 40px;
+				padding-right:40px;
+				background-color: aliceblue;
+				border-radius: 100px;
+				border-width: 10px;
+			}
+
+		</style>
+		<title>Game AI - Final Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/robot.png" alt="" /></span><span class="title">Game AI - Rylan Graham & Adria Pons</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="ex-1.html">Patrolling & Wandering</a></li>
+							<li><a href="ex-2.html">Flocking & Leader</a></li>
+							<li><a href="ex-3.html">Perception</a></li>
+							<li><a href="ex-4.html">Finite State Machines</a></li>
+							<li><a href="ex-5.html">Behavior Bricks</a></li>
+							<li><a href="ex-6.html">Formation Motion</a></li>
+							<li><a href="ex-7.html">Final Project</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Game AI - Final Project</h1>
+							<h3>Playable WebGL Release available at the end of the page!</h3>
+							<span class="image main"><img style="object-fit:cover; height:300px; border-radius:30px; margin:none" src="images/Final/NavCamera.gif" alt="" /></span>
+								<div style="display:flex; justify-content: space-evenly; margin-top: -60px; margin-bottom:60px;">
+									<button style="border-radius: 100px;"><a href="#ProjInfo">Project Info</a></button>
+									<button style="border-radius: 100px;"><a href="#Github">Github</a></button>
+									<button style="border-radius: 100px;"><a href="#Release">Release</a></button>
+									<button style="border-radius: 100px;"><a href="#Features">Features</a></button>
+									<button style="border-radius: 100px;"><a href="#Video">Video</a></button>
+								</div>
+							<div>
+								<div>
+									<h3 id="ProjInfo">Project Info</h3>
+											<ul class="alt">
+												<li>Project Work Time: <span style="color:black; font-weight: bold;">12 hours</span> </li>
+												<li>Tech Stack: <span style="color:black; font-weight: bold;">Unity Engine, VS Code, Unity Assets</span></li>
+												<li>Contributors: <a href="https://github.com/RylanJGraham" style="color:black; font-weight: bold;">Rylan Graham</a> &  <a href="https://github.com/AdriaPm" style="color:black; font-weight: bold;">Adria Pons</a></li>
+											</ul>
+								</div>
+							</div>
+							
+							<div style="margin-bottom:60px; margin-top:-20px;">
+								<h3  id="Github">Check Out the Project!</h3>
+								<a target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject" class="icon brands style2 fa-github" style="width:300px; border-radius:20px; margin-top:-10px; border-width: 2px; background-color:black; color:rgb(107, 14, 230); border-color:rgb(107, 14, 230)"><span class="label">GitHub</span></a>
+							</div>
+							<h3  id="Release">Download Release!</h3>
+							<a href="zips/FiniteStateMachine-Build.zip" download="GameAI-FSM-Release" class="button primary icon solid fa-download" style="margin-top:-20px; margin-bottom: 40px;">Release</a>
+							<section>
+								<h2  id="Features" style="font-weight:700">Features</h2>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Feature</th>
+												<th>Description</th>
+												<th>View</th>
+												<th>Script</th>
+											</tr>
+										</thead>
+										<tbody style="align-content: start;">
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Menu <i>UI</i></td>
+												<td style="vertical-align:top; width:300px;">Press esc to open the Projects Menu system, which allows the user to navigate to various cameras illustrating AI behavior, and reset the scene.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/Menu.png" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">No Script. Uses Unity Canvas & UI Flow </td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Camera Selection <i>UI</i></td>
+												<td style="vertical-align:top; width:300px;">Open the Dropdown Menu to toggle between Camera's showing different AI behaviors.</td>
+												<td><img style="object-fit:cover; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/Dropdown.png" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">No Script. Uses Unity Canvas & UI Flow </td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px; vertical-align:top;">Restart Scene <i>UI</i></td>
+												<td style="width:300px; vertical-align:top;">Push the Restart Scene Button to Reset all Behavior</td>
+												<td><img style="object-fit:cover;  width:500px; border-radius:10px; vertical-align:middle" src="images/Final/Reset.png" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">No Script. Uses Unity Canvas & UI Flow </td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px; vertical-align:top;">Crocodile & Snake Behavior <i>Behavior Bricks</i></td>
+												<td style="width:300px; vertical-align:top;">The scene featues a Crocodile guarding his egg. The Crocodile can be moved via the user using mouse clicks. However be careful, a Snake is attempting to steal the egg, and if the Crocodile is moved too far the Snake will steal and subsequently hide.</td>
+												<td><img style="object-fit:cover; height: 400px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/BB.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;"><img style="object-fit:cover; height: 400px; width: 300px; border-radius:10px; vertical-align:middle" src="images/Final/BehaviorBricks.png" alt="" /></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; width:200px; vertical-align:top;">Navigation Camera <i>UI</i></td>
+												<td style="width:300px; vertical-align:top;">Navigatable Camera in Scene using user mouse positioning and WASD movement. Press shift or ctrl to rise or descend.</td>
+												<td><img style="object-fit:cover; height: 400px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/NavCamera.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Camera Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/UI/CustomCameraController.cs">Nav Camera</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Deer Behavior <i>Wander AI</i></td>
+												<td style="vertical-align:top; width:300px;">Deers flock within scene. The flock moves location around the entire scene and the deer with it. Flocking is random. Deer Manager has an adjustable amount of deer, and adjustable radius's, speed etc	</td>
+												<td><img style="object-fit:cover; height: 400px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/DeerWander.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Deer Scripts: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerManager.cs">Deer Controller</a>, <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerManager.cs">Deer Manager</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Wolf Behavior <i>Camera Detection AI</i></td>
+												<td style="vertical-align:top; width:300px;">Wolves navigate scene randomly. Wolves have camera frustrum detection with adjustable range. If Wolves detect deer within camera they begin global pathing to detected deer location. Once close to deer they begin to pursue</td>
+												<td><img style="object-fit:cover; height: 400px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/WolfMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Wolf Scripts: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Wolves/WolfController.cs">Wolf Controller</a>, <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Wolves/WolfManager.cs">Wolf Manager</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Leopard Behavior <i>Waypoint AI</i></td>
+												<td style="vertical-align:top; width:300px;">Leopard navigates scene between waypoints.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/LeopardMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Leopard Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Leopard/JaguarPatrol.cs">Leopard Controller</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Bird Flock Behavior <i>Flock AI</i></td>
+												<td style="vertical-align:top; width:300px;">Birds spawn randomly across scene. They then begin moving to global flock position. Upon reaching position, birds begin to flock in a circle.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/BirdMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Bird Scripts: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Birds/BirdFlocking.cs">Bird Controller</a>, <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Birds/BirdManager.cs">Bird Manager</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Fish Flock Behavior <i>Flock AI</i></td>
+												<td style="vertical-align:top; width:300px;">Fish spawn around the scene. They then begin moving to the sunken treasure deep within the lake. Fish flock around the treasure.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/FishMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Fish Scripts: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Birds/BirdFlocking.cs">Fish Controller</a>, <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Birds/BirdManager.cs">Fish Manager</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Formation Movement <i>Formation AI</i></td>
+												<td style="vertical-align:top; width:300px;">An Otter leads Jerboa across the scene. Jerboa stay tight in formation behind the leader. The Otter has its movement controlled via player mouse clicks. Observe how the formation is kept, with spacing, and speed.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/FormationMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Formation Motion Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/FormationMotion/Formation.cs">Formation</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Otter Behavior <i>Waypoint AI</i></td>
+												<td style="vertical-align:top; width:300px;">A group of Otters navigate the scene following the river.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/OtterMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Otter Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/OtterMovement.cs">Otter Controller</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Lizard Behavior <i>Wander AI</i></td>
+												<td style="vertical-align:top; width:300px;">A group of Lizards navigate the rocks.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/LizardMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Lizard Wander Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Lizard/LizardWander.cs">Lizard Controller</a></td>
+											</tr>
+											<tr>
+												<td style="font-weight:700; vertical-align:top; width:200px;">Villager Behavior <i>Wander AI</i></td>
+												<td style="vertical-align:top; width:300px;">A group of villagers gather around the campfire. Villagers stay within a flock radius and do not leave the area.</td>
+												<td><img style="object-fit:cover; height:300px; width:500px; border-radius:10px; vertical-align:middle" src="images/Final/VillagersMovement.gif" alt="" /></td>
+												<td style="width:300px; vertical-align:top;">Villager Wander Script: <a style="color:blue" target="_blank" href="https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerController.cs">Nav Camera</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h2  id="Video" style="font-weight:700">Features Video</h2>
+								<div style="display:flex; justify-content:center">
+									<iframe width="1080" height="720" src="https://www.youtube.com/embed/TUyRrbRZivI?si=gT2Rx3A6pN4TMKYh" allowfullscreen></iframe>
+								</div>
+					</div>
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
